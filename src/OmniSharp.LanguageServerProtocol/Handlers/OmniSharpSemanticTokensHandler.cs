@@ -94,6 +94,7 @@ namespace OmniSharp.LanguageServerProtocol.Handlers
             foreach (var span in omnisharpResponse.Spans)
             {
                 var range = new Range(span.StartLine, span.StartColumn, span.EndLine, span.EndColumn);
+                if(range.Start.Line != range.End.Line){continue;}
                 builder.Push(range, _tokenTypes[span.Type], span.Modifiers.Select(modifier => _tokenModifiers[modifier]));
             }
         }

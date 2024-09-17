@@ -2,6 +2,17 @@
 
 [![Build Status](https://dev.azure.com/omnisharp/Builds/_apis/build/status/OmniSharp.omnisharp-roslyn?branchName=master)](https://dev.azure.com/omnisharp/Builds/_build/latest?definitionId=2&branchName=master)
 
+## this fork
+
+This fork fixes an issue that occurs with neovim.
+
+fixed(not perfect)
+
+- https://github.com/OmniSharp/omnisharp-roslyn/issues/2574
+- https://github.com/OmniSharp/omnisharp-roslyn/issues/2580
+- https://github.com/OmniSharp/omnisharp-roslyn/issues/2597
+
+
 ## Introduction
 
 OmniSharp is a .NET development platform based on [Roslyn](https://github.com/dotnet/roslyn) workspaces. It provides project dependencies and C# language services to various IDEs and plugins.
